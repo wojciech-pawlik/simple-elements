@@ -1,0 +1,10 @@
+html, body {
+  height: 100%; }
+
+#clock {
+  position: relative;
+  font-size: 70px;
+  top: calc(50% - 35px);
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
