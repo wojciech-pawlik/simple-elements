@@ -1,0 +1,72 @@
+/* === PRE === */
+
+$bunge-inline: 'Bungee Inline', cursive;
+$enriqueta: 'Enriqueta', serif;
+$fredericka-the-great: 'Fredericka the Great', cursive;
+$body-background: url("../../images/fractal.png") repeat;
+$body-background-size: 2.08rem 1.56rem;
+$body-color: rgb(94, 15, 15);
+$body-content-background: rgba(194, 168, 168, 0.8);
+$border: 3px solid #aaa;
+
+/* === STYLES === */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: $body-background;
+    background-size: $body-background-size;
+}
+
+.content {
+    position: relative;
+    top: 20%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    border: $border;
+    border-radius: 20px;
+    color: $body-color;
+    background: $body-content-background;
+
+    h1 {
+        font-family: $fredericka-the-great;
+        line-height: 3rem;
+        font-size: 2.5rem;
+        margin: 1rem auto;
+    }
+
+    p {
+        font-family: $enriqueta;
+        line-height: calc(.9rem + 1.4vw);
+        font-size: calc(.7rem + 1.4vw);
+        margin: 1rem 10%;
+    }
+
+    li {
+        display: block;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        height: 3rem;
+    }
+
+    a {
+        background: rgb(170, 133, 133);
+        display: block;
+        border: 3px solid $body-content-background;
+        border-radius: 15px;
+        text-decoration: none;
+        font-family: $bunge-inline;
+        color: $body-color;
+    
+        &:hover {
+            background: rgb(205, 233, 253);
+            color: rgb(35, 49, 73);
+            transition: all .5s ease-in-out;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+/* === PRE === */
+/* === STYLES === */
+html, body {
+  height: 100%; }
+
+body {
+  background: url("../../images/fractal.png") repeat;
+  background-size: 2.08rem 1.56rem; }
+
+.content {
+  position: relative;
+  top: 20%;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 3px solid #aaa;
+  border-radius: 20px;
+  color: #5e0f0f;
+  background: rgba(194, 168, 168, 0.8); }
+  .content h1 {
+    font-family: "Fredericka the Great", cursive;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin: 1rem auto; }
+  .content p {
+    font-family: "Enriqueta", serif;
+    line-height: calc(.9rem + 1.4vw);
+    font-size: calc(.7rem + 1.4vw);
+    margin: 1rem 10%; }
+  .content li {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    height: 3rem; }
+  .content a {
+    background: #aa8585;
+    display: block;
+    border: 3px solid rgba(194, 168, 168, 0.8);
+    border-radius: 15px;
+    text-decoration: none;
+    font-family: "Bungee Inline", cursive;
+    color: #5e0f0f; }
+    .content a:hover {
+      background: #cde9fd;
+      color: #233149;
+      transition: all .5s ease-in-out; }
+
+/*# sourceMappingURL=main.css.map */
