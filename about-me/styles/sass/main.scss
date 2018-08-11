@@ -1,0 +1,234 @@
+/* === PRE === */
+
+/* === fonts === */
+$monoton: 'Monoton', cursive;
+$cormoran-garamond: 'Cormorant Garamond', serif;
+$audiowide: 'Audiowide', cursive;
+/* === colors, backgrounds === */
+//navbar
+$nav-background: rgba(85, 85, 85, 0.966);
+$nav-background-hover: rgb(170, 133, 133);
+$nav-color: #aaa;
+$nav-color-active: rgb(180, 180, 113);
+$nav-color-hover: #eee;
+//body
+$body-background: url("../../images/fractal.png") repeat;
+$body-background-size: 2.08rem 1.56rem;
+$body-color: rgb(94, 15, 15);
+$body-description-background: rgba(194, 168, 168, 0.8);
+//footer
+$footer-background: rgba(85, 85, 85, 0.986);
+$footer-color: #ccc;
+$footer-color-a: #c74f78;
+$footer-color-a-hover: #f26896;
+//border
+$border: 3px solid #aaa;
+
+/* === NAVBAR === */
+
+.navbar {
+    font-size: 0;
+    background-color: $nav-background;
+    border-bottom: $border;
+
+    img {
+        height: 0;
+    }
+    
+    ul {
+        text-align: center;
+    }
+
+    li {
+        font-family: $audiowide;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        height: 3rem;
+        border-bottom: 1px solid $nav-color;
+    }
+
+    .active {
+        color: $nav-color-active;
+        text-decoration: underline;
+    }
+
+    a {
+        text-decoration: none;
+        color: $nav-color;
+        display: block;
+
+        &:hover {
+            background: rgb(170, 133, 133);
+            color: $nav-color-hover;
+            transition: all .5s ease-in-out;
+        }
+    }
+
+    @media screen and (min-width: 738px) {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        opacity: .95;
+
+        ul {
+            margin: auto;
+            width: 100%;
+        }
+
+        li {
+            display: inline-block;
+            border-bottom: none;
+        }
+
+        a {
+            border-radius: 10px;
+            padding: 0 1rem;
+        }
+    }
+
+    @media screen and (min-width: 840px) {
+        .brand {
+            height: 3rem;
+            vertical-align: middle;
+            margin: 0 1rem;
+        }
+
+        img {
+            height: 3rem;
+        }
+    }
+}
+
+/* === BODY === */
+
+body {
+    background: $body-background;
+    background-size: $body-background-size;
+}
+
+.body {
+    display: flex;
+    width: 100wh;
+    min-height: calc(100vh - 24rem);
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(170, 170, 170, 0.2);
+}
+
+.profile-image {
+    margin: 1rem auto;
+    width: 90%;
+    text-align: center;
+
+    img {
+        width: 80%;
+        border-radius: 50%;
+        border: $border;
+    }
+}
+
+.description {
+    margin: auto;
+    margin-bottom: 2rem;
+    padding: 2rem 1.5rem;
+    width: 90%;
+    border: $border;
+    border-radius: 20px;
+    color: $body-color;
+    background: $body-description-background;
+
+    h1 {
+        line-height: 3rem;
+        font-size: 2.5rem;
+        font-family: $monoton;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    p {
+        margin: 1rem .5rem;
+        line-height: calc(.9rem + 1.4vw);
+        font-size: calc(.7rem + 1.4vw);
+        font-family: $cormoran-garamond;
+        text-indent: 10%;
+        text-align: justify;
+        text-justify: inter-character;
+        letter-spacing: .02rem;
+    }
+}
+
+@media screen and (min-width: 738px) {
+    .body {
+        min-height: calc(100vh - 8rem);
+    }
+
+    .content {
+        flex-direction: row;
+        margin-top: 4rem;
+    }
+
+    .profile-image {
+        margin: 3rem 1rem 2rem 5%;
+        width: 40%;
+
+        img {
+            margin: auto;
+        }
+    }
+
+    .description {
+        width: 40%;
+        margin: 3rem 5% 2rem 1rem;
+    }
+}
+
+/* === FOOTER === */
+
+footer {
+    display: table;
+    background-color: $footer-background;
+    border-top: $border;
+    width: 100%;
+    height: 8rem;
+    text-align: center;
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: $cormoran-garamond;
+
+    small {
+        color: $footer-color;
+        letter-spacing: .025rem;
+        margin-bottom: 1.5rem;
+        display: block;        
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    a {
+        color: $footer-color-a;
+        text-decoration: none;
+        margin: 0 .5rem;
+        display: inline-block;
+        
+        &:hover {
+            color: $footer-color-a-hover;
+            transition: color .25s ease-in-out;
+        }
+    }
+}

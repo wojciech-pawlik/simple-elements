@@ -1,0 +1,155 @@
+/* === PRE === */
+/* === fonts === */
+/* === colors, backgrounds === */
+/* === NAVBAR === */
+.navbar {
+  font-size: 0;
+  background-color: rgba(85, 85, 85, 0.966);
+  border-bottom: 3px solid #aaa; }
+  .navbar img {
+    height: 0; }
+  .navbar ul {
+    text-align: center; }
+  .navbar li {
+    font-family: "Audiowide", cursive;
+    font-size: 1.4rem;
+    line-height: 3rem;
+    height: 3rem;
+    border-bottom: 1px solid #aaa; }
+  .navbar .active {
+    color: #b4b471;
+    text-decoration: underline; }
+  .navbar a {
+    text-decoration: none;
+    color: #aaa;
+    display: block; }
+    .navbar a:hover {
+      background: #aa8585;
+      color: #eee;
+      transition: all .5s ease-in-out; }
+  @media screen and (min-width: 738px) {
+    .navbar {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4rem;
+      opacity: .95; }
+      .navbar ul {
+        margin: auto;
+        width: 100%; }
+      .navbar li {
+        display: inline-block;
+        border-bottom: none; }
+      .navbar a {
+        border-radius: 10px;
+        padding: 0 1rem; } }
+  @media screen and (min-width: 840px) {
+    .navbar .brand {
+      height: 3rem;
+      vertical-align: middle;
+      margin: 0 1rem; }
+    .navbar img {
+      height: 3rem; } }
+
+/* === BODY === */
+body {
+  background: url("../../images/fractal.png") repeat;
+  background-size: 2.08rem 1.56rem; }
+
+.body {
+  display: flex;
+  width: 100wh;
+  min-height: calc(100vh - 24rem); }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(170, 170, 170, 0.2); }
+
+.profile-image {
+  margin: 1rem auto;
+  width: 90%;
+  text-align: center; }
+  .profile-image img {
+    width: 80%;
+    border-radius: 50%;
+    border: 3px solid #aaa; }
+
+.description {
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 1.5rem;
+  width: 90%;
+  border: 3px solid #aaa;
+  border-radius: 20px;
+  color: #5e0f0f;
+  background: rgba(194, 168, 168, 0.8); }
+  .description h1 {
+    line-height: 3rem;
+    font-size: 2.5rem;
+    font-family: "Monoton", cursive;
+    font-weight: 700;
+    text-align: center; }
+  .description p {
+    margin: 1rem .5rem;
+    line-height: calc(.9rem + 1.4vw);
+    font-size: calc(.7rem + 1.4vw);
+    font-family: "Cormorant Garamond", serif;
+    text-indent: 10%;
+    text-align: justify;
+    text-justify: inter-character;
+    letter-spacing: .02rem; }
+
+@media screen and (min-width: 738px) {
+  .body {
+    min-height: calc(100vh - 8rem); }
+
+  .content {
+    flex-direction: row;
+    margin-top: 4rem; }
+
+  .profile-image {
+    margin: 3rem 1rem 2rem 5%;
+    width: 40%; }
+    .profile-image img {
+      margin: auto; }
+
+  .description {
+    width: 40%;
+    margin: 3rem 5% 2rem 1rem; } }
+/* === FOOTER === */
+footer {
+  display: table;
+  background-color: rgba(85, 85, 85, 0.986);
+  border-top: 3px solid #aaa;
+  width: 100%;
+  height: 8rem;
+  text-align: center; }
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "Cormorant Garamond", serif; }
+  .wrapper small {
+    color: #ccc;
+    letter-spacing: .025rem;
+    margin-bottom: 1.5rem;
+    display: block; }
+  .wrapper strong {
+    font-weight: 700; }
+  .wrapper a {
+    color: #c74f78;
+    text-decoration: none;
+    margin: 0 .5rem;
+    display: inline-block; }
+    .wrapper a:hover {
+      color: #f26896;
+      transition: color .25s ease-in-out; }
+
+/*# sourceMappingURL=main.css.map */
