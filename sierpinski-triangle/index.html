@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Playfair+Display+SC:900" rel="stylesheet">
+    <link href="../styles/css/reset.css" rel="stylesheet">
+    <link href="styles/css/slider.css" rel="stylesheet">
+    <link href="styles/css/main.css" rel="stylesheet">
+    <title>Sierpinski triangle</title>
+</head>
+<body>
+    <div class="content">
+        <div class="toolbar">
+            <div class="title"><h1>Sierpinski<br> triangle</h1></div>
+            <div class="input">
+                <p>Size:</p>
+                <input id="sizeRange" type="range" min="0" max="200" value="100" step="10" onchange="sizeRangeChange()">
+                <input id="sizeText" type="text" maxlength="3" value="100" onchange="sizeTextChange()">
+            </div>
+            <div class="input">
+                <p>Iteration:</p>
+                <input id="partsRange" type="range" min="0" max="10" value="2" onchange="partsRangeChange()">
+                <input id="partsText" type="text" maxlength="2" value="2" onchange="partsTextChange()">
+            </div>
+            <div class="input">
+                <p>Color:</p>
+                <input id="color" type="color">
+            </div>
+            <div class="button">
+                <button id="draw">Draw</button>
+                <button id="clear">Clear</button>
+            </div>
+            <script src="scripts/inputs.js"></script>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas"><script src="scripts/script.js"></script></canvas>
+        </div>
+    </div>
+</body>
+</html>
